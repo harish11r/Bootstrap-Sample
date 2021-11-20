@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../static/font/Poppins-Regular.ttf") format("truetype");
+}
+body {
+  background: url(../static/images/Background.svg) no-repeat;
+  font-family: "Poppins", monospace, sans-serif;
+  font-weight: 300;
+}
+
+.navbar .navbar-toggler:focus {
+  outline: none;
+}
+.navbar .navbar-brand {
+  color: #002265;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 37px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.205em;
+}
+.navbar .navbar-brand .last-name {
+  font-weight: 300;
+}
+@media (max-width: 767.98px) {
+  .navbar .navbar-brand {
+    font-size: 20px;
+  }
+}
+.navbar .navbar-toggler-icon {
+  background: url(../static/icons/menu-icon.svg) no-repeat;
+}
+.navbar .navbar-nav .nav-link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.055em;
+  color: #212121;
+  margin: 0 10px;
+}
+.navbar .navbar-nav .contact {
+  background: #608af5;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.banner {
+  padding: 0.5rem 1rem;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+}
+.banner .banner-content {
+  flex: 0 0 45%;
+}
+.banner .banner-content h3 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 52px;
+  letter-spacing: 0.005em;
+  color: #002265;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.banner .banner-content .header-line1 {
+  font-size: 25px;
+  line-height: 32px;
+}
+.banner .banner-content p {
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: 0.015em;
+}
+
+.card-section h3 {
+  align-self: center;
+  font-size: 25px;
+  line-height: 52px;
+  letter-spacing: 0.055em;
+  color: #14279b;
+}
+.card-section .cards {
+  margin: 30px 0;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .card-section .cards {
+    flex-direction: column;
+  }
+}
+.card-section .cards .card-item {
+  flex-basis: 30%;
+  background: #ffffff;
+  box-shadow: 0px 5px 26px 5px rgba(0, 0, 0, 0.17);
+  border-radius: 13px;
+  padding: 15px;
+}
+@media (max-width: 767.98px) {
+  .card-section .cards .card-item {
+    margin-bottom: 30px;
+  }
+}
+.card-section .cards .card-item h4 {
+  font-size: 18px;
+  line-height: 37px;
+  letter-spacing: 0.055em;
+  color: #000000;
+}
+.card-section .cards .card-item p {
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.055em;
+  color: #000000;
+}
+.card-section .cards .send-pay {
+  background: url(../static/images/Ellipse-6.svg) no-repeat;
+  background-position: 20px 20px;
+  background-size: 70% 70%;
+}
+.card-section .cards .send-pay h4 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #6c63ff;
+  align-self: flex-start;
+}
+.card-section .cards .e-commerce {
+  background: url(../static/images/Ellipse-7.svg) no-repeat;
+  background-position: 20px 20px;
+  background-size: 70% 70%;
+}
+.card-section .cards .e-commerce h4 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  color: #4581f7;
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+.card-section .cards .e-commerce p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #4581f7;
+}
+.card-section .cards .beats-learning {
+  background: url(../static/images/Ellipse-8.svg) no-repeat;
+  background-position: 20px 20px;
+  background-size: 70% 70%;
+}
+.card-section .cards .beats-learning h4 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  align-self: flex-start;
+  margin-bottom: 0;
+  letter-spacing: 0;
+}
+.card-section .cards .beats-learning p {
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.footer-section {
+  height: 400px;
+  background: url(../static/images/wave.svg) no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  margin-top: 50px;
+}
+@media (max-width: 767.98px) {
+  .footer-section {
+    flex-direction: column;
+    height: 900px;
+    padding: 0 0 60px 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer-section .contact {
+  background: url(../static/icons/contact-bg.svg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 166px;
+  height: 160px;
+}
