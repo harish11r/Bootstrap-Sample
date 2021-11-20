@@ -1,0 +1,20 @@
+{
+    "name": "bootstrap-sample",
+    "version": "1.0.0",
+    "description": "Gulp & Bootstrap setup example",
+    "main": "index.js",
+    "devDependencies": {
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-beautify": "^3.0.0",
+        "gulp-sass": "^5.0.0",
+        "gulp-webserver": "^0.9.1",
+        "sass": "^1.42.1"
+    },
+    "scripts": {
+        "start": "gulp",
+        "build": "gulp build"
+    },
+    "author": "Harish",
+    "license": "ISC"
+}

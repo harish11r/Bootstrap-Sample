@@ -1,0 +1,12 @@
+# Node
+node_modules
+npm-debug.log
+
+# MacOS
+.DS_Store
+
+# WebStorm
+.idea
+
+# Local build artifacts
+dist
