@@ -5,27 +5,27 @@ const webServer = require('gulp-webserver')
 const sass = require('gulp-sass')(require('sass'))
 
 function cleanDist() {
-  return del(['dist'])
+  return del(['docs'])
 }
 
 function copyStaticToDist() {
-  return src(['src/static/**/*.*']).pipe(dest('dist' + '/static/'))
+  return src(['src/static/**/*.*']).pipe(dest('docs' + '/static/'))
 }
 
 function copyHtmlToDist() {
   return src(['src/*.html'])
     .pipe(beautify.html({ indent_size: 4, preserve_newlines: false }))
-    .pipe(dest('dist'))
+    .pipe(dest('docs'))
 }
 
 function copyJsToDist() {
-  return src(['src/js/**/*.js']).pipe(dest('dist' + '/js/'))
+  return src(['src/js/**/*.js']).pipe(dest('docs' + '/js/'))
 }
 
 function copyScssToDist() {
   return src(['src/scss/**/*.scss'])
     .pipe(sass().on('error', sass.logError))
-    .pipe(dest('dist' + '/css/'))
+    .pipe(dest('docs' + '/css/'))
 }
 
 function watchFiles() {
@@ -35,13 +35,13 @@ function watchFiles() {
 }
 
 function webServerStart() {
-  return src('dist').pipe(
+  return src('docs').pipe(
     webServer({
       port: 8000,
       livereload: true,
       directoryListing: false,
       open: true,
-      fallback: './dist/index.html',
+      fallback: './docs/index.html',
     }),
   )
 }
